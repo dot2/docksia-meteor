@@ -1,0 +1,11 @@
+<template name="App_body">
+  <div class="flex-row container-full">
+    {{> sidebar}}
+    <div class="contentArea">
+      {{> header}}
+      <div class="contentRendered">
+        {{> Template.dynamic template=main}}
+      </div>
+    </div>
+  </div>
+</template>

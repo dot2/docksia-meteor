@@ -1,0 +1,76 @@
+/************************************
+* Custom scss utility classes
+************************************/
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: col;
+}
+
+.items-stretch {
+    align-items: stretch;
+}
+
+.items-start {
+    align-items: flex-start;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.items-end {
+    align-items: flex-end;
+}
+
+.items-baseline {
+    align-items: baseline;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
+}
+
+.p-8 {
+    padding: 0.25rem;
+}
+
+.pt-8 {
+    padding-top: 0.25rem;
+}
+
+.pr-8 {
+    padding-right: 0.25rem;
+}
+
+.pb-8 {
+    padding-bottom: 0.25rem;
+}
+
+.pl-8 {
+    padding-left: 0.25rem;
+}

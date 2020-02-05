@@ -1,0 +1,275 @@
+/************************************
+* Body page (content area)
+************************************/
+.contentArea {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 75%;
+}
+
+.contentRendered {
+    padding: 0px 32px 16px 32px;
+}
+
+.container-full {
+    height: 100vh;
+}
+
+/************************************
+* Header component
+************************************/
+.topbar {
+    padding: 32px;
+}
+
+/************************************
+* Sidebar component
+************************************/
+
+.sidebar {
+    background-color: $ui-01;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 25%;
+}
+
+.logo {
+    padding: 32px 16px 0px 16px;
+    margin-bottom: 32px;
+}
+
+.nav-link {
+    height: 40px;
+    width: 100%;
+    position: relative;
+    color: $text-01;
+    padding: 0 16px 0 16px;
+    margin-bottom: 16px;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+    
+    .nav-border {
+        width: 0px;
+        background-color: $interactive-01;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        transition: all 0.2s ease-out;
+    }
+
+    .nav-icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 16px;
+    }
+
+}
+
+.nav-link:hover {
+    background-color: $hover-ui;
+}
+
+.nav-link:hover > .nav-border {
+    width: 3px;
+}
+
+/************************************
+* Global defaults
+************************************/
+html {
+    font-family: $primary-font;
+    background-color: $ui-background;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: $text-01;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(304px, 1fr));
+    grid-gap: 16px;
+}
+
+.contentArea {
+    height: 85vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 0px 16px 16px 16px;
+}
+
+.content-bar {
+    min-height: 64px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0 8px 16px;
+    margin-bottom: 8px;
+}
+
+.text-01 {
+    color: $text-01;
+}
+.text-02 {
+    color: $text-02;
+}
+.text-03 {
+    color: $text-03;
+}
+.text-04 {
+    color: $text-04;
+}
+.text-05 {
+    color: $text-05;
+}
+
+.label-01 {
+    font-size: .75rem;
+    line-height: 1rem;
+    font-weight: 400;
+    letter-spacing: .32px;
+}
+
+.helper-text-01 {
+    font-size: .75rem;
+    line-height: 1rem;
+    font-weight: 400;
+    letter-spacing: .32px;
+}
+
+.body-short-01 {
+    font-size: .875rem;
+    font-weight: 300;
+    line-height: 1.25rem;
+    letter-spacing: .16px;
+}
+
+.body-short-02 {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.375rem;
+    letter-spacing: 0;
+}
+
+.body-long-01 {
+    font-size: .875rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+    letter-spacing: .16px;
+}
+
+.body-long-02 {
+    font-size: 1rem;
+    line-height: 1.375rem;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+.productive-heading-01 {
+    font-size: .875rem;
+    line-height: 1.125rem;
+    font-weight: 600;
+    letter-spacing: .16px;
+}
+
+.productive-heading-02 {
+    font-size: 1rem;
+    line-height: 1.375rem;
+    font-weight: 600;
+    letter-spacing: 0;
+}
+
+.productive-heading-03 {
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+.productive-heading-04 {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+.productive-heading-05 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+.productive-heading-06 {
+    font-size: 2.625rem;
+    line-height: 2.625rem;
+    font-weight: 300;
+    letter-spacing: 0;
+}
+
+button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: .875rem;
+    font-weight: 400;
+    box-shadow: 0 4px 6px $shadow;
+    border-radius: 2px;
+}
+
+.button-default {
+    height: 48px;
+    padding: 0 64px 0 16px;
+}
+
+.button-medium {
+    height: 40px;
+    padding: 0 64px 0 16px;
+}
+
+.button-small {
+    height: 32px;
+    padding: 0 64px 0 16px;
+}
+
+.button-icon {
+    height: 48px;
+    padding: 0 16px 0 16px;
+
+    img {
+        margin-left: 64px;
+    }
+}
+
+.button-primary {
+    background-color: $interactive-01;
+    transition: background 0.2s ease-out;
+
+    &:hover {
+        background-color: $hover-primary;
+    }
+}
+
+.button-secondary {
+    background-color: $interactive-02;
+    transition: background 0.2s ease-out;
+
+    &:hover {
+        background-color: $hover-secondary;
+    }
+}
