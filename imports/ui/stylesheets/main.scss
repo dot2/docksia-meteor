@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 75%;
+    width: 80vw;
 }
 
 .contentRendered {
@@ -32,7 +32,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 25%;
+    width: 14vw;
+    overflow: hidden;
 }
 
 .logo {
@@ -40,9 +41,14 @@
     margin-bottom: 32px;
 }
 
+a {
+    width: auto;
+    text-decoration: none;
+}
+
 .nav-link {
     height: 40px;
-    width: 100%;
+    width: 14vw;
     position: relative;
     color: $text-01;
     padding: 0 16px 0 16px;
@@ -73,6 +79,14 @@
 }
 
 .nav-link:hover > .nav-border {
+    width: 3px;
+}
+
+.navItem_active {
+    background-color: $ui-03;
+}
+
+.navItem_active > .nav-link {
     width: 3px;
 }
 
