@@ -1,5 +1,19 @@
 <template name="App_home">
-  <div class="flex-col">
+  <div class="apiResponse">
     <h1 class="productive-heading-04">Pinned docks</h1>
+    <div class="responses">
+      <!-- set the data context -->
+      {{#each location}}
+        <!-- if location has an error property, display it -->
+        {{#if error}}
+          <p>There was an error: {{error.errorType}} {{error.message}}!</p>
+        {{else}}
+          <div class="cards">
+            <h2 class="productive-heading-02">{{title}}</h2>
+            <span class="label-01 text-02">{{id}}</span>
+          </div>
+        {{/if}}
+      {{/each}}
+    </div>
   </div>
 </template>
