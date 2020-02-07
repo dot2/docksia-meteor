@@ -4,6 +4,7 @@ import { BlazeLayout } from 'meteor/kadira:blaze-layout';
 // Import pages here
 import '../../ui/layouts/body/body.js';
 import '../../ui/pages/home/home.js';
+import '../../ui/pages/docks/docks.js';
 import '../../ui/pages/not-found/not-found.js';
 
 // Import components here
@@ -23,3 +24,10 @@ FlowRouter.notFound = {
     BlazeLayout.render('App_body', { main: 'App_notFound' });
   },
 };
+
+FlowRouter.route('/docks', {
+  name: 'App.docks',
+  action() {
+    BlazeLayout.render('App_body', { main: 'docks'});
+  }
+})
