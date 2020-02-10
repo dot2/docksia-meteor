@@ -5,6 +5,7 @@ import { BlazeLayout } from 'meteor/kadira:blaze-layout';
 import '../../ui/layouts/body/body.js';
 import '../../ui/pages/home/home.js';
 import '../../ui/pages/docks/docks.js';
+import '../../ui/pages/apps/apps.js';
 import '../../ui/pages/not-found/not-found.js';
 
 // Import components here
@@ -29,5 +30,12 @@ FlowRouter.route('/docks', {
   name: 'App.docks',
   action() {
     BlazeLayout.render('App_body', { main: 'docks'});
+  }
+})
+
+FlowRouter.route('/apps', {
+  name: 'App.apps',
+  action() {
+    BlazeLayout.render('App_body', { main: 'apps'});
   }
 })
